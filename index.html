@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Report</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search City" class="search-text-box">
+            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="loading-display">
+            <div class="loading-image"></div>
+            <p class="text-1">Search City</p>
+            <p class="text-2">Find out the weather conditions of the city</p>
+        </div>
+        <div class="weather-display">
+            <div class="location-and-date">
+                <div class="location">
+                    <i class="location-image fa-solid fa-location-dot"></i>
+                    <p class="location-text">Singapore</p>
+                </div>
+                <p class="date">Thu, 09 Aug</p>
+            </div>
+            <div class="image-and-temp">
+                <img src="assets/weather/clouds.svg" alt="cloudy-image" class="image">
+                <div class="temp-container">
+                    <p class="temp-text-1">30°C</p>
+                    <p class="temp-text-2">Clouds</p>
+                </div>
+            </div>
+            <div class="humidity-and-wind-speed">
+                <div class="humidity">
+                    <i class="humidity-icon fa-solid fa-droplet"></i>
+                    <div class="humidity-text">
+                        <p class="text-1">Humidity</p>
+                        <p class="text-2">74%</p>
+                    </div>
+                </div>
+                <div class="wind-speed">
+                    <i class="wind-speed-icon fa-solid fa-wind"></i>
+                    <div class="wind-speed-text">
+                        <p class="text-1">Wind Speed</p>
+                        <p class="text-2">4.12 Km/h</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="forecast">
+                <div class="forecast-1">
+                    <p class="forecast-1-date">Aug 09</p>
+                    <img src="assets/weather/drizzle.svg" alt="drizzle" class="forecast-1-icon">
+                    <p class="forecast-1-temp">28°C</p>
+                </div>
+                <div class="forecast-2">
+                    <p class="forecast-2-date">Aug 10</p>
+                    <img src="assets/weather/clouds.svg" alt="clouds" class="forecast-2-icon">
+                    <p class="forecast-2-temp">15°C</p>
+                </div>
+                <div class="forecast-3">
+                    <p class="forecast-3-date">Aug 11</p>
+                    <img src="assets/weather/rain.svg" alt="rain" class="forecast-3-icon">
+                    <p class="forecast-3-temp">16°C</p>
+                </div>
+                <div class="forecast-4">
+                    <p class="forecast-4-date">Aug 12</p>
+                    <img src="assets/weather/rain.svg" alt="rain" class="forecast-4-icon">
+                    <p class="forecast-4-temp">25°C</p>
+                </div>
+                <div class="forecast-5">
+                    <p class="forecast-5-date">Aug 13</p>
+                    <img src="assets/weather/rain.svg" alt="rain" class="forecast-5-icon">
+                    <p class="forecast-5-temp">30°C</p>
+                </div>
+            </div>
+        </div>
+        <div class="error-display">
+            <div class="error-image"></div>
+            <p class="text-1">Oops! City Not Found</p>
+            <p class="text-2">Please enter a valid city name and try again.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
